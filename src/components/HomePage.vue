@@ -1,6 +1,9 @@
 <template>
   <v-ons-page>
+
+    <div data-v-7ba5bd90="" class="background page__background"></div>
     <v-ons-toolbar class="home-toolbar">
+      
       <div class="left">
         <v-ons-toolbar-button @click="$emit('toggleMenu')">
           <v-ons-icon icon="ion-navicon, material:md-menu"></v-ons-icon>
@@ -51,7 +54,7 @@ export default {
   name: "home",
   data() {
     return {
-      msg: "Welcome",
+      msg: "Topsis",
       essentialLinks: [
         {
           label: "Core Docs",
@@ -117,7 +120,20 @@ ons-card {
 }
 
 .page__background {
-  background-color: black;
+  background-color:white;
+}
+
+.home-toolbar {
+  background-color: #ff3946;
+}
+
+.toolbar__title {
+    color: white;
+    font-weight: bold;
+}
+
+.toolbar-button {
+    color: white;
 }
 
 
